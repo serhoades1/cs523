@@ -70,7 +70,7 @@ class FeatureEngineer(BaseEstimator, TransformerMixin):
         if {"units_passed", "units_enrolled"}.issubset(X_out.columns):
             X_out["pass_rate"] = X_out["units_passed"] / X_out["units_enrolled"].replace(0, np.nan)
 
-        # 2. GPA change: captures semester-over-semester academic trajectory
+        # 2. GPA change: captures academic trajectory per semester
         if {"gpa_semester_2", "gpa_semester_1"}.issubset(X_out.columns):
             X_out["gpa_change"] = X_out["gpa_semester_2"] - X_out["gpa_semester_1"]
 
