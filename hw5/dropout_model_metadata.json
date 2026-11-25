@@ -1,0 +1,56 @@
+{
+  "creation_time_utc": "2026-11-20T23:20:04.796919+00:00",
+  "library_versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "raw_input_columns": [
+    "person_id",
+    "age",
+    "gender",
+    "nationality",
+    "first_generation",
+    "disability_status",
+    "family_income_level",
+    "scholarship_holder",
+    "tuition_up_to_date",
+    "part_time_job",
+    "weekly_work_hours",
+    "course_type",
+    "study_mode",
+    "semester",
+    "international_student",
+    "admission_grade",
+    "previous_qualification_grade",
+    "units_enrolled",
+    "units_passed",
+    "units_failed",
+    "gpa_semester_1",
+    "gpa_semester_2",
+    "attendance_rate",
+    "assignments_submitted_rate",
+    "library_visits_per_month",
+    "lms_logins_per_week",
+    "extracurricular_activities",
+    "missed_deadlines",
+    "stress_level",
+    "mental_health_support",
+    "satisfaction_score",
+    "commute_time_mins",
+    "sleep_hours"
+  ],
+  "chosen_threshold": 0.3462920865846118,
+  "best_hyperparameters": {
+    "model__learning_rate": 0.1,
+    "model__max_leaf_nodes": 15,
+    "model__min_samples_leaf": 100
+  },
+  "test_metrics": {
+    "roc_auc": 0.9009152264623701,
+    "precision_at_chosen_threshold": 0.6998218934100562,
+    "recall_at_chosen_threshold": 0.7980003124511795
+  }
+}
